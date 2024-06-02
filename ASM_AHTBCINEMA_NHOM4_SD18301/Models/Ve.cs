@@ -11,7 +11,7 @@ namespace AHTBCinema_NHOM4_SD18301.Models
         public string TenVe { get; set; }
         public float GiaVe { get; set; }
         [ForeignKey("CaChieus")]
-        public string CaChieu { get; set; }
+        public int CaChieu { get; set; }
         public CaChieu CaChieus {  get; set; }
         [ForeignKey("Ghes")]
         public string Ghe { get; set; }

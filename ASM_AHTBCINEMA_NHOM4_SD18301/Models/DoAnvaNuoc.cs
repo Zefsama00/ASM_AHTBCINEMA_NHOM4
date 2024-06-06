@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace AHTBCinema_NHOM4_SD18301.Models
@@ -8,6 +9,7 @@ namespace AHTBCinema_NHOM4_SD18301.Models
         [Key]
         public string IdComBo { get; set; }
         public string TenCombo { get; set; }
+        public Byte Hinhanh { get; set; }
         public float Gia { get; set;}
         public ICollection<HoaDon> HoaDons { get; set; }
     }
